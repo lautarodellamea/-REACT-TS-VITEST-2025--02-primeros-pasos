@@ -2,12 +2,13 @@ import { render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, test, vi } from "vitest";
 import { FirstStepsApp } from "./FirstStepsApp";
 
-// con el fn podemos simular peticionse, etc, podemos ver cuantas vecs fue llamado, con que valores, etc
+// con el fn podemos simular peticionse, etc, podemos ver cuantas veces fue llamado, con que valores, etc
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const mockItemCounter = vi.fn((_props: unknown) => {
   return <div data-testid="ItemCounter" />;
 });
 
+// un mock es algo ficticio que reemplaza a un componente real, en este caso el ItemCounter
 vi.mock("./shopping-cart/ItemCounter", () => ({
   ItemCounter: (props: unknown) => mockItemCounter(props),
 }));

@@ -34,3 +34,10 @@ Puntualmente veremos:
 - Integración con Testing Library
 - Y mucho más
   Es una sección que puede sentirse abrumadora, pero deja las bases de todo lo que necesitamos para probar aplicaciones de React y código de JavaScript/TypeScript
+
+## Orden en que testeamos esta app
+
+1. `math.helper.ts`
+2. `MyAwesomeApp.ts`
+3. `ItemCounter.ts`
+4. `FirstStepsApp.ts`
